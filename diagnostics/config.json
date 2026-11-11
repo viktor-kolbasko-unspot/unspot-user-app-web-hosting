@@ -1,0 +1,9 @@
+{
+  "apiBaseUrl": "https://uit-dev-products.unspot.tech",
+  "authBaseUrl": "https://auth-dev.unspot.tech",
+  "tenant": "uit-dev-products",
+  "privateMercureUrl": "https://mercure-dev.unspot.tech/.well-known/mercure",
+  "allowedMercureOrigins": [
+    "https://mercure-dev.unspot.tech"
+  ]
+}

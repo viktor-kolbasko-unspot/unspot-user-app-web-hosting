@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://uit-dev-products.unspot.tech https://auth-dev.unspot.tech https://mercure-dev.unspot.tech; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>UnSpot — проверка подключения</title>
+  <link rel="stylesheet" href="./probe.css">
+  <script src="./probe.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Проверка подключения</h1>
+    <p>Тестовая страница для проверки связи с сервером UnSpot. Это ещё не новый веб-клиент.</p>
+    <p>Данные входа и токены используются только в памяти этой вкладки. Страница показывает только результат проверок.</p>
+    <form id="probe-form" autocomplete="off">
+      <label for="username">Email</label>
+      <input id="username" name="username" type="email" autocomplete="off" required>
+      <label for="password">Пароль</label>
+      <input id="password" name="password" type="password" autocomplete="off" required>
+      <button id="run-probe" type="submit">Проверить подключение</button>
+      <button id="clear-probe" type="button">Очистить и закрыть соединение</button>
+    </form>
+    <p id="summary" role="status" aria-live="polite">Проверка ещё не запускалась.</p>
+    <ol id="checks" aria-label="Результаты проверки">
+      <li>Определение компании <span id="check-resolver" data-state="idle">Не проверено</span></li>
+      <li>Вход по паролю <span id="check-login" data-state="idle">Не проверено</span></li>
+      <li>Текущий пользователь <span id="check-me" data-state="idle">Не проверено</span></li>
+      <li>Токен обновлений <span id="check-mercure-token" data-state="idle">Не проверено</span></li>
+      <li>Соединение обновлений <span id="check-mercure-open" data-state="idle">Не проверено</span></li>
+      <li>Получение события <span id="check-mercure-message" data-state="idle">Не проверено</span></li>
+    </ol>
+    <p>Соединение без полученного события не подтверждает доставку обновлений. Проверка не создаёт и не меняет данные на сервере.</p>
+    <noscript>Для проверки нужен JavaScript.</noscript>
+  </main>
+</body>
+</html>
