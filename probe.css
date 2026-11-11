@@ -1,0 +1,16 @@
+:root { font: 16px/1.5 system-ui, sans-serif; color: #282a32; background: #fff; }
+body { margin: 0; }
+main { max-width: 720px; margin: 40px auto; padding: 0 24px; }
+h1 { font-size: 28px; line-height: 1.3; }
+form { display: grid; gap: 8px; max-width: 420px; margin: 24px 0; }
+input, button { box-sizing: border-box; min-height: 44px; border: 1px solid #b4b4b7; border-radius: 4px; font: inherit; padding: 8px 12px; }
+button { cursor: pointer; background: #0050ff; color: white; border-color: #0050ff; }
+button[type=button] { background: white; color: #0050ff; }
+button:disabled { background: #e4e3e4; color: #666; border-color: #e4e3e4; cursor: wait; }
+input:focus-visible, button:focus-visible { outline: 3px solid #94b5ff; outline-offset: 2px; }
+ol { padding-left: 24px; }
+li { margin: 12px 0; }
+li span { display: block; font-size: 14px; color: #666; }
+[data-state=pass] { color: #286c37; }
+[data-state=fail], [data-state=blocked] { color: #b71d31; }
+@media (max-width: 600px) { main { margin: 24px auto; padding: 0 16px; } }
