@@ -1,5 +1,13 @@
 {
   "authBaseUrl": "https://auth-dev.unspot.tech",
   "apiBaseUrl": "https://uit-dev-products.unspot.tech",
-  "tenant": "uit-dev-products"
+  "tenant": "uit-dev-products",
+  "deploymentFlags": {
+    "telegramEnabled": false,
+    "ruServicesEnabled": true
+  },
+  "mercure": {
+    "publicHubUrl": "https://mercure-dev.unspot.tech/p/.well-known/mercure",
+    "privateHubUrl": "https://mercure-dev.unspot.tech/.well-known/mercure"
+  }
 }
