@@ -1,0 +1,1 @@
+import{Dt as g,R as Ml,Vt as kr}from"./chunk-DmnY0md8.js";var o=class e{router=g(kr);ngOnInit(){this.router.navigate([`/settings-profile`],{replaceUrl:!0})}static ɵfac=function(t){return new(t||e)};static ɵcmp=Ml({type:e,selectors:[[`un-email-change-compatibility`]],decls:0,vars:0,template:function(t,r){},encapsulation:2})};export{o as EmailChangeCompatibilityComponent};

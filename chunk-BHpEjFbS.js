@@ -1,0 +1,1 @@
+import{t as U}from"./main-DECZD7YM.js";import{o as k}from"./chunk-BeDMU4j3.js";import{Dt as g,P as L}from"./chunk-DmnY0md8.js";var c=class a{language=g(k);format(e,r={},g=this.language.current()){return U(e,r,g)}static ɵfac=function(r){return new(r||a)};static ɵprov=L({token:a,factory:a.ɵfac,providedIn:`root`})};export{c as t};
