@@ -1,0 +1,1 @@
+function t(n,s){if(s.status!==`authenticated`)return!1;let o=s.context;return o.epoch===n.epoch&&o.userId===n.userId&&o.tenant===n.tenant&&o.companyId===n.companyId&&o.apiOrigin===n.apiOrigin}export{t};
